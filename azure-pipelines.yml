@@ -7,8 +7,8 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: terraform fmt
+  displayName: 'Format Terraform Script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
