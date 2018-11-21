@@ -7,6 +7,9 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
+- script: terraform init
+  displayName: 'Initialize Terraform'
+
 - script: terraform validate
   displayName: 'Validate Terraform Script'
 
